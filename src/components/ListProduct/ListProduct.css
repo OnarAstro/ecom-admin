@@ -1,0 +1,118 @@
+.list-product {
+  padding: 0.5rem;
+  background-color: #fff;
+  margin-bottom: 0;
+  border-radius: 0.125rem;
+  /* width: 100%; */
+  margin-top: 1rem;
+}
+
+.list-product h4.list-product-title {
+  font-size: 22px;
+  font-weight: 700;
+  padding: 1.25rem;
+  text-transform: uppercase;
+  color: #292c27;
+}
+
+
+
+.list-product .container-table {
+  text-align: start;
+  /* width: 100%; */
+
+
+  max-width: 100%; /* اجعلها تعتمد على الحاوية */
+  overflow-x: auto; /* لتفعيل التمرير الأفقي */
+  overflow-y: hidden; /* منع التمرير العمودي إذا لم يكن ضروريًا */
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+.list-product .container-table table {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+  border-collapse: collapse;
+
+  min-width: 700px; /* حدد الحد الأدنى للعرض إذا كانت الأعمدة كثيرة */
+}
+
+.list-product .container-table table thead tr {
+  background-color: #f0f2f5;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: start;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.list-product .container-table table thead tr th {
+  padding: 0.5rem;
+  color: #292c27;
+
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+/*  */
+.list-product .container-table table tbody {
+  width: 100%;
+}
+
+.list-product .container-table table tbody tr {
+  border-bottom-width: 1px;
+  border-color: rgb(15 23 42 / 0.2);
+  color: #a2a2a2;
+  padding: 1.5rem;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+
+.list-product .container-table table tbody tr td {
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+.list-product .container-table table tbody tr td img {
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgb(15 23 42 / 0.05);
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.list-product .container-table table tbody tr td .name {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.list-product .container-table table tbody tr td .delete {
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 700;
+  padding-left: 1.5rem;
+}
+
+.list-product .container-table table tbody tr td .delete  .a:hover {
+  color: crimson;
+}
+
+
+@media (min-width: 640px) {
+  .list-product {
+    padding: 1rem;
+    margin: 1.75rem;
+  }
+  .list-product .container-table table tbody tr td .delete {
+    padding-left: 3.5rem;
+  }
+}

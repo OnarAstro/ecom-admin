@@ -1,0 +1,117 @@
+.add-product {
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: #ffff;
+  width: 100%;
+  border-radius: 0.125rem;
+  margin-top: 1rem;
+
+}
+
+.add-product .box-input {
+  margin-bottom: 0.75rem;
+}
+
+.add-product .box-input h4 {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+  color: #292c27;
+}
+
+.add-product .box-input input {
+  background-color: #f0f2f5 ;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  max-width: 20rem;
+  width: 100%;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.375rem;
+  border: none;
+}
+
+/*  */
+
+.add-product .box-select {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.add-product .box-select h4 {
+  color: #292c27;
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
+.add-product .box-select select {
+  background-color: #f0f2f5 ;
+  box-shadow: 0 1px 2px 0 rgb(15 23 42 / 0.2);
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 0.125rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+
+/*  */
+
+
+
+.add-product .box-label label img {
+  width: 5rem;
+  border-radius: 0.125rem /* 2px */;
+  display: inline-block;
+}
+
+
+.add-product .box-label input {
+  background-color: #f0f2f5 ;
+  max-width: 20rem;
+  width: 100%;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.add-product button {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.25rem;
+  border: none;
+
+  /*  */
+  font-size: 15px;
+  font-weight: 600;
+  border-color: #292c27;
+  background-color: #292c27;
+  padding-left: 1.75rem /* 28px */;
+  padding-right: 1.75rem /* 28px */;
+  padding-top: 0.75rem /* 12px */;
+  padding-bottom: 0.75rem /* 12px */;
+  color: #ffff;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  border-radius: 999px;
+}
+
+.add-product  button:hover {
+  background-color: black;
+}
+
+
+/* responsive */
+
+@media (min-width: 1024px) {
+  .add-product {
+    margin: 1.75rem /* 28px */;
+  }
+}
